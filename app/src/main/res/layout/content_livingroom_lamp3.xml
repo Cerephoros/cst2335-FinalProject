@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".LivingRoomLamp3"
+    tools:showIn="@layout/activity_living_room_lamp3">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="LAMP 3"
+        android:textColor="@color/colorBlank"
+        android:textStyle="bold"
+        android:layout_marginTop="2dp"
+        android:gravity="center_horizontal"
+        android:textSize="26dp"
+        android:id="@+id/textView3" />
+
+    <ImageView
+        android:background="@drawable/livingroom_lamp1_on"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/id_img_lamp3"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginEnd="45dp"
+        android:layout_centerVertical="true"
+        android:layout_alignEnd="@+id/textView3" />
+
+    <ImageView
+        android:background="@drawable/livingroom_lamp_a"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/id_img_lamp_a"
+        android:layout_gravity="center_horizontal"
+        android:alpha="0.7"
+        android:layout_marginEnd="45dp"
+        android:layout_centerVertical="true"
+        android:layout_alignEnd="@+id/textView3" />
+
+    <ToggleButton
+        android:text="ToggleButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/id_tgg_lamp3"
+        android:background="@drawable/toggle_rect"
+        android:checked="false"
+        android:layout_gravity="center_vertical"
+        android:layout_alignTop="@+id/id_img_lamp3"
+        android:layout_alignStart="@+id/id_slider_lamp3" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dimmer"
+        android:textColor="@color/colorBlank"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/textView_3"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/id_slider_lamp3" />
+
+    <SeekBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/id_slider_lamp3"
+        android:background="@drawable/toggle_rect"
+        android:minWidth="150dp"
+        android:progress="100"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="30dp"
+        android:layout_below="@+id/textView_3"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Colour"
+        android:textColor="@color/colorBlank"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/textView_4"
+        android:layout_alignBottom="@+id/id_img_lamp_a"
+        android:layout_alignStart="@+id/id_slider_lamp3" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_rect_yellow"
+        android:id="@+id/id_btn_lamp3_yellow"
+        android:layout_below="@+id/id_img_lamp3"
+        android:layout_alignStart="@+id/textView_4" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_rect_red"
+        android:id="@+id/id_btn_lamp3_red"
+        android:layout_below="@+id/textView_4"
+        android:layout_toEndOf="@+id/id_btn_lamp3_yellow" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_rect_green"
+        android:id="@+id/id_btn_lamp3_green"
+        android:layout_alignTop="@+id/id_btn_lamp3_yellow"
+        android:layout_toEndOf="@+id/id_btn_lamp3_red" />
+
+</RelativeLayout>

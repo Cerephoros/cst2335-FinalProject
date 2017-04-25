@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/item_house"
+        android:title="House"
+        app:showAsAction="always"
+        android:icon="@drawable/exterior"
+        android:orderInCategory="101">
+    </item>
+
+    <item android:id="@+id/item_auto"
+        android:title="Automobile"
+        app:showAsAction="always"
+        android:icon="@drawable/fiat_500"
+        android:orderInCategory="102">
+    </item>
+
+    <item android:id="@+id/item_living_room"
+        android:title="Living Room"
+        app:showAsAction="always"
+        android:icon="@drawable/living_room"
+        android:orderInCategory="103">
+    </item>
+
+    <item android:id="@+id/about"
+        android:title="About"
+        android:orderInCategory="100"
+        app:showAsAction="never">
+    </item>
+</menu>
